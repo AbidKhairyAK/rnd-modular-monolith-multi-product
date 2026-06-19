@@ -1,0 +1,26 @@
+[
+  {
+    "key": "classes",
+    "label": "Classes",
+    "description": "Homeroom and schedule management for school LMS.",
+    "supportedProductKeys": ["school"]
+  },
+  {
+    "key": "guardians",
+    "label": "Guardians",
+    "description": "Parent and guardian contact workflows for school LMS.",
+    "supportedProductKeys": ["school"]
+  },
+  {
+    "key": "compliance",
+    "label": "Compliance",
+    "description": "Mandatory training status and due dates for corporate LMS.",
+    "supportedProductKeys": ["corporate"]
+  },
+  {
+    "key": "teams",
+    "label": "Teams",
+    "description": "Manager and team learning-path oversight for corporate LMS.",
+    "supportedProductKeys": ["corporate"]
+  }
+]

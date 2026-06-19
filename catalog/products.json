@@ -1,0 +1,12 @@
+[
+  {
+    "key": "school",
+    "label": "School LMS",
+    "supportedFeatureKeys": ["classes", "guardians"]
+  },
+  {
+    "key": "corporate",
+    "label": "Corporate LMS",
+    "supportedFeatureKeys": ["compliance", "teams"]
+  }
+]
