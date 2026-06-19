@@ -1,0 +1,5 @@
+1. Rapikan catalog dulu sebagai kontrak minimal.
+2. Setup landlord baru dengan Adonis + Inertia + Vue.
+3. Definisikan shape runtime config tenant dari landlord.
+4. Baru bangun frontend v2 dengan konsep surface.
+5. Setelah itu backend v2.

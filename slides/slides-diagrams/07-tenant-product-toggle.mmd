@@ -1,0 +1,19 @@
+flowchart TB
+  T[Tenant]
+  S[school]
+  C[corporate]
+
+  T --> S
+  T --> C
+
+  subgraph SchoolFeatures["school features"]
+    F1[courses: on]
+    F2[classes: on/off]
+    F3[guardians: on/off]
+  end
+
+  subgraph CorporateFeatures["corporate features"]
+    F4[courses: on]
+    F5[compliance: on/off]
+    F6[teams: on/off]
+  end

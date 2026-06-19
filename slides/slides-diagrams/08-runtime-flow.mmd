@@ -1,0 +1,12 @@
+sequenceDiagram
+  participant Admin
+  participant Landlord
+  participant Backend
+  participant Frontend
+
+  Admin->>Landlord: ubah product + enabled features
+  Landlord-->>Frontend: runtime config
+  Frontend->>Backend: request feature data
+  Backend->>Landlord: ambil runtime config saat perlu
+  Landlord-->>Backend: productKey + enabledFeatures
+  Backend-->>Frontend: data sesuai feature aktif

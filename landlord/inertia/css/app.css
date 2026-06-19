@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@source "../../resources/views/**/*.edge";
+@source "../**/*.vue";
+
+[x-cloak] {
+  display: none;
+}

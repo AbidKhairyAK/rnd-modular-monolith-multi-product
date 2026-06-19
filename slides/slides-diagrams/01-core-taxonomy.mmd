@@ -1,0 +1,15 @@
+flowchart LR
+  R1[resource]
+  R2[resource]
+  R3[resource]
+  F1[feature]
+  F2[feature]
+  P1[product]
+  C[catalog]
+
+  R1 --> F1
+  R2 --> F1
+  R3 --> F2
+  F1 --> P1
+  F2 --> P1
+  P1 --> C
