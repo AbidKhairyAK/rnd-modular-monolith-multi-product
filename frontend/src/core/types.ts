@@ -31,6 +31,51 @@ export type ProductUiManifest = {
     learner: string
     instructor: string
   }
+  wording: ProductWording
+}
+
+export type ProductWording = {
+  courses: {
+    sharedEyebrow: string
+    publicTitle: string
+    publicDescription: string
+    loadingState: string
+    unavailableState: string
+    errorState: string
+    emptyState: string
+    ownerLabel: string
+    participantLabel: string
+    progressLabel: string
+    widgetEyebrow: string
+    widgetTitle: string
+    widgetLoadingState: string
+    widgetUnavailableState: string
+    widgetErrorState: string
+    widgetTotalLabel: string
+    widgetParticipantsLabel: string
+    widgetDescription: string
+    widgetCta: string
+  }
+  classes: {
+    publicEyebrow: string
+    publicTitle: string
+    publicDescription: string
+    loadingState: string
+    unavailableState: string
+    errorState: string
+    emptyState: string
+    homeroomLabel: string
+    participantsLabel: string
+    widgetEyebrow: string
+    widgetTitle: string
+    widgetLoadingState: string
+    widgetUnavailableState: string
+    widgetErrorState: string
+    widgetTotalLabel: string
+    widgetParticipantsLabel: string
+    widgetDescription: string
+    widgetCta: string
+  }
 }
 
 export type NavItem = {

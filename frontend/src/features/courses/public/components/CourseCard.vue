@@ -1,10 +1,15 @@
 <script setup lang="ts">
-import type { Course, ProductUiManifest } from '@/core/types'
+import { computed } from 'vue'
+
+import { useTenantWording } from '@/app/wording/useTenantWording'
+import type { Course } from '@/core/types'
 
 defineProps<{
   course: Course
-  product: ProductUiManifest
 }>()
+
+const { product, wording } = useTenantWording()
+const courseWording = computed(() => wording.value.courses)
 </script>
 
 <template>
@@ -25,15 +30,15 @@ defineProps<{
 
     <div class="mt-5 grid gap-4 text-sm text-slate-300 sm:grid-cols-3">
       <div>
-        <p class="text-slate-400">{{ product.labels.instructor }}</p>
+        <p class="text-slate-400">{{ courseWording.ownerLabel }}</p>
         <p class="mt-1 font-medium text-white">{{ course.owner }}</p>
       </div>
       <div>
-        <p class="text-slate-400">{{ product.labels.learner }}s</p>
+        <p class="text-slate-400">{{ courseWording.participantLabel }}</p>
         <p class="mt-1 font-medium text-white">{{ course.learners }}</p>
       </div>
       <div>
-        <p class="text-slate-400">Progress</p>
+        <p class="text-slate-400">{{ courseWording.progressLabel }}</p>
         <p class="mt-1 font-medium text-white">{{ course.progress }}%</p>
       </div>
     </div>
