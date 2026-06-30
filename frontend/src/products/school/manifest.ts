@@ -1,4 +1,5 @@
 import type { ProductUiManifest } from '@/core/types'
+import { schoolProductWording } from '@/app/wording/product-wording'
 
 const sharedTheme = {
   shell: 'bg-slate-950 text-slate-100',
@@ -25,4 +26,5 @@ export const schoolProductManifest: ProductUiManifest = {
     learner: 'Student',
     instructor: 'Teacher',
   },
+  wording: schoolProductWording,
 }
